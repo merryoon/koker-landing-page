@@ -14,7 +14,7 @@ const featureList = [
   },
   {
     title: 'Event Catering',
-    desc: 'Perfect additions for parties, weddings, and corporate gatherings. We scale to satisfy any crowd.',
+    desc: 'Perfect for breakfast,snack time  and corporate gatherings. We scale to satisfy any crowd.',
     icon: '🎉'
   }
 ];
