@@ -1,0 +1,131 @@
+.hero {
+  padding-top: 140px;
+  padding-bottom: 90px;
+  background: linear-gradient(180deg, #fffbeb 0%, #ffffff 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.textContent {
+  flex: 1.2;
+  text-align: left;
+}
+
+.imageContent {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(217, 119, 6, 0.3);
+  max-width: 340px;
+  width: 100%;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mainImage:hover {
+  transform: scale(1.04);
+}
+
+.badge {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  margin-top: 24px;
+  font-size: 52px;
+  font-weight: 900;
+  color: #1f2937;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  color: #d97706;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 19px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.actions {
+  margin-top: 36px;
+  display: flex;
+  gap: 16px;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primaryBtn {
+  background: #d97706;
+  color: white;
+  border: none;
+  box-shadow: 0 10px 15px -3px rgba(217, 119, 6, 0.3);
+}
+
+.primaryBtn:hover {
+  background: #b45309;
+}
+
+.secondaryBtn {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.secondaryBtn:hover {
+  background: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+  .textContent {
+    text-align: center;
+  }
+  .actions {
+    justify-content: center;
+  }
+  .title {
+    font-size: 38px;
+  }
+}
