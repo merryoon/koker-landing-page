@@ -1,33 +1,32 @@
 import React from 'react';
 import styles from './Hero.module.css';
-import kokerImage from '../../assets/images1.jpg'; 
+import kokerImg from '../../assets/images1.jpg'; 
 
 export default function Hero() {
   return (
-    <header className={styles.hero}>
+    <header className={styles.heroWrapper}>
+      {/* Fullscreen Background Image */}
+      <img src={kokerImg} alt="Koker Background" className={styles.backgroundImage} />
+      
+      {/* Dark Overlay for readability */}
+      <div className={styles.overlay}></div>
+      
+      {/* Foreground Content */}
       <div className={styles.container}>
-        <div className={styles.textContent}>
-          <span className={styles.badge}>Freshly Fried Daily</span>
-          <h1 className={styles.title}>
-            Golden, Crunchy, <br />
-            <span className={styles.highlight}>Authentic Koker.</span>
+        <div className={styles.contentSide}>
+          <span className={styles.badge}>Authentic & Fresh</span>
+          <h1 className={styles.mainTitle}>
+            KOKER: Your <br />
+            <span className={styles.highlight}>Daily Dose of Golden Joy</span>
           </h1>
-          <p className={styles.subtitle}>
-            Experience the ultimate Home Made snack. Perfectly crispy on the outside, delightfully fluffy on the inside, and baked just right.
+          <p className={styles.description}>
+            Discover the artisanal taste of authentic, freshly fried golden pastries. 
+            Made to order for that perfect, satisfying crunch.
           </p>
+          
           <div className={styles.actions}>
-            <button className={styles.primaryBtn}>Order Now</button>
-            <button className={styles.secondaryBtn}>View Gallery</button>
-          </div>
-        </div>
-        
-        <div className={styles.imageContent}>
-          <div className={styles.imageWrapper}>
-            <img 
-              src={kokerImage} 
-              alt="Freshly fried golden Koker snacks" 
-              className={styles.mainImage} 
-            />
+            <button className={styles.primaryBtn}>Shop Our Products</button>
+            <button className={styles.secondaryBtn}>Our Story</button>
           </div>
         </div>
       </div>
